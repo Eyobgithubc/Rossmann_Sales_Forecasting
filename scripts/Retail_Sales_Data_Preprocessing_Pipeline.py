@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-
+import seaborn as sns
 def preprocess_data(df, target_column=None, test_size=0.2, random_state=42):
    
     df["Date"] = pd.to_datetime(df["Date"], infer_datetime_format=True)
