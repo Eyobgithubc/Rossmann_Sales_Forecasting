@@ -38,8 +38,7 @@ def create_lagged_features(df, n_lag=30):
         target.append(df.iloc[i]['Sales'])
     return np.array(features), np.array(target)
 
-import numpy as np
-from sklearn.preprocessing import MinMaxScaler
+
 
 def scale_data(features, target):
    
